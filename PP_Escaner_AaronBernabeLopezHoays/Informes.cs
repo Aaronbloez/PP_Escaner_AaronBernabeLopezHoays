@@ -17,7 +17,7 @@ namespace PP_Escaner_AaronBernabeLopezHoays
             StringBuilder stringBuilder = new StringBuilder();
             switch (e.Tipo)
             {
-                case Escaner.TipoDoc.Libro:
+                case Escaner.TipoDoc.libro:
                     foreach (Libro lib in e.ListaDocumentos)
                     {
                         if (lib.Estado == paso)
@@ -32,7 +32,7 @@ namespace PP_Escaner_AaronBernabeLopezHoays
                     resumen = stringBuilder.ToString();
 
                     break;
-                case Escaner.TipoDoc.Mapa:
+                case Escaner.TipoDoc.mapa:
                     foreach (Mapa lib in e.ListaDocumentos)
                     {
                         if (lib.Estado == paso)

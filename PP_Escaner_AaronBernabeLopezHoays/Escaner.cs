@@ -19,8 +19,8 @@ namespace PP_Escaner_AaronBernabeLopezHoays
         }
         public enum TipoDoc
         {
-            Libro,
-            Mapa
+            libro,
+            mapa
         }
 
         //atributos
@@ -39,11 +39,11 @@ namespace PP_Escaner_AaronBernabeLopezHoays
             this.listadocumentos = new List<Documento>();
             this.marca = marca;
             this.tipo = tipo;
-            if (tipo == TipoDoc.Libro)
+            if (tipo == TipoDoc.libro)
             {
                 this.locacion = Departamento.procesosTecnicos;
             }
-            else if (tipo == TipoDoc.Mapa)
+            else if (tipo == TipoDoc.mapa)
             {
                 this.locacion = Departamento.mapoteca;
             }
